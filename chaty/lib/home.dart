@@ -38,12 +38,44 @@ class HomePage extends StatelessWidget {
               SizedBox(height: 30,),
               Container(
                 width: double.infinity,
-                height: 100,
+                padding: EdgeInsets.all(30),
                 decoration: BoxDecoration(
                   color: putihColor,
                   borderRadius: BorderRadius.vertical(
                     top: Radius.circular(40),
                   ),
+                ),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      'Friends',
+                      style: titleTextStyle,
+                    ),
+                    SizedBox(height: 15,),
+                    Row(
+                      children: [
+                        Image.asset(
+                          'assets/images/kono2.png',
+                          height: 55,
+                          width: 55,
+                        ),
+                        SizedBox(width: 12,),
+                        Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Text(
+                              'Lalatina',
+                              style: titleTextStyle,
+                            ),
+                            Text(
+                              'Oy kazuma, kochi!'
+                            ),
+                          ],
+                        ),
+                      ],
+                    ),
+                  ],
                 ),
               ),
             ],
