@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'theme.dart';
+import 'package:chaty/widgets/chat.dart';
 
 class HomePage extends StatelessWidget {
 
@@ -53,28 +54,7 @@ class HomePage extends StatelessWidget {
                       style: titleTextStyle,
                     ),
                     SizedBox(height: 15,),
-                    Row(
-                      children: [
-                        Image.asset(
-                          'assets/images/kono2.png',
-                          height: 55,
-                          width: 55,
-                        ),
-                        SizedBox(width: 12,),
-                        Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Text(
-                              'Lalatina',
-                              style: titleTextStyle,
-                            ),
-                            Text(
-                              'Oy kazuma, kochi!'
-                            ),
-                          ],
-                        ),
-                      ],
-                    ),
+                    chatTile(),
                   ],
                 ),
               ),
