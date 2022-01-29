@@ -3,12 +3,19 @@ import 'package:chaty/theme.dart';
 
 class chatTile extends StatelessWidget {
 
+  final imageUrl;
+  final name;
+  final text;
+  final time;
+
+  chatTile({this.imageUrl, this.name, this.text, this.time});
+
   @override
   Widget build(BuildContext context) {
     return Row(
       children: [
         Image.asset(
-          'assets/images/kono2.png',
+          imageUrl,
           height: 55,
           width: 55,
         ),
@@ -17,18 +24,19 @@ class chatTile extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Text(
-              'Lalatina',
+              name,
               style: titleTextStyle,
             ),
+            SizedBox(height: 5,),
             Text(
-              'Oy kazuma, kochi!',
+              text,
               style: subtitleTextStyle,
             ),
           ],
         ),
         Spacer(),
         Text(
-          'Now',
+          time,
           style: statusTextStyle,
         ),
       ],

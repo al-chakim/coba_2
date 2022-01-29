@@ -54,7 +54,12 @@ class HomePage extends StatelessWidget {
                       style: titleTextStyle,
                     ),
                     SizedBox(height: 15,),
-                    chatTile(),
+                    chatTile(
+                      imageUrl: 'assets/images/kono2.png',
+                      name: 'Lalatina',
+                      text: 'Oy Kazuma, Kochi!',
+                      time: 'Now',
+                    ),
                   ],
                 ),
               ),
