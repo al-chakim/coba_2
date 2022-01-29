@@ -5,6 +5,7 @@ Color putihColor = Color(0xffFFFFFF);
 Color abuColor = Color(0xff808BA2);
 Color hitamColor = Color(0xff2C3A59);
 Color hijauColor = Color(0xff29CB9E);
+Color biru2Color = Color(0xffC5F5FF);
 
 TextStyle titleTextStyle = TextStyle(
   color: hitamColor,

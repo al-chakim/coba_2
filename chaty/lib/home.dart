@@ -23,8 +23,27 @@ class HomePage extends StatelessWidget {
               Text(
                 'Kazuma',
                 style: TextStyle(
-                  fontSize: 20, 
+                  fontSize: 25, 
                   color: putihColor
+                ),
+              ),
+              SizedBox(height: 2,),
+              Text(
+                'Lord Isekai',
+                style: TextStyle(
+                  color: biru2Color,
+                  fontSize: 15
+                ),
+              ),
+              SizedBox(height: 30,),
+              Container(
+                width: double.infinity,
+                height: 100,
+                decoration: BoxDecoration(
+                  color: putihColor,
+                  borderRadius: BorderRadius.vertical(
+                    top: Radius.circular(40),
+                  ),
                 ),
               ),
             ],
