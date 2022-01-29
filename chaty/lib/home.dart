@@ -60,14 +60,14 @@ class HomePage extends StatelessWidget {
                       text: 'Oy Kazuma, Kochi!',
                       time: 'Now',
                     ),
-                    SizedBox(height: 15,),
+                    
                     chatTile(
                       imageUrl: 'assets/images/kono3.png',
                       name: 'Aqua',
                       text: 'Kazuna no bakaaaa!!!!',
                       time: '10.23',
                     ),
-                    SizedBox(height: 15,),
+                    
                     chatTile(
                       imageUrl: 'assets/images/kono4.png',
                       name: 'Megumin',

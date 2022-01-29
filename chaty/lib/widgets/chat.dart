@@ -12,34 +12,37 @@ class chatTile extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Row(
-      children: [
-        Image.asset(
-          imageUrl,
-          height: 55,
-          width: 55,
-        ),
-        SizedBox(width: 12,),
-        Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Text(
-              name,
-              style: titleTextStyle,
-            ),
-            SizedBox(height: 5,),
-            Text(
-              text,
-              style: subtitleTextStyle,
-            ),
-          ],
-        ),
-        Spacer(),
-        Text(
-          time,
-          style: statusTextStyle,
-        ),
-      ],
+    return Padding(
+      padding: EdgeInsets.all(15),
+      child: Row(
+        children: [
+          Image.asset(
+            imageUrl,
+            height: 55,
+            width: 55,
+          ),
+          SizedBox(width: 12,),
+          Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text(
+                name,
+                style: titleTextStyle,
+              ),
+              SizedBox(height: 5,),
+              Text(
+                text,
+                style: subtitleTextStyle,
+              ),
+            ],
+          ),
+          Spacer(),
+          Text(
+            time,
+            style: statusTextStyle,
+          ),
+        ],
+      ),
     );
   }
 }
