@@ -8,7 +8,7 @@ class HomePage extends StatelessWidget {
       body: SafeArea(
         child: Column(
           children: [
-            Text('sdv', style: TextStyle(fontSize: 50),),
+            Image.asset('assets/images/kono1.png')
           ],
         ),
       )
