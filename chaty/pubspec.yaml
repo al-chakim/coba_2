@@ -61,6 +61,8 @@ flutter:
   assets:
     - assets/images/kono1.png
     - assets/images/kono2.png
+    - assets/images/kono3.png
+    - assets/images/kono4.png
   
 
   # An image asset can refer to one or more resolution-specific "variants", see
