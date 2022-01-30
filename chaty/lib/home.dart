@@ -78,7 +78,7 @@ class HomePage extends StatelessWidget {
                         time: '11.35',
                         unread: false,
                       ),
-                      SizedBox(height: 15,),
+                      SizedBox(height: 30,),
                       Text(
                         'Groups',
                         style: titleTextStyle,
@@ -90,7 +90,20 @@ class HomePage extends StatelessWidget {
                         time: 'Now',
                         unread: true,
                       ),
-                      
+                      chatTile(
+                        imageUrl: 'assets/images/dev2.png',
+                        name: 'MSI Global',
+                        text: 'I found a bug in MSI Dra...',
+                        time: '01.34',
+                        unread: true,
+                      ),
+                      chatTile(
+                        imageUrl: 'assets/images/dev3.png',
+                        name: 'Pengurus Himakom',
+                        text: 'Jangan lupa bawa bekel y...',
+                        time: '01.36',
+                        unread: false,
+                      ),
                     ],
                   ),
                 ),
