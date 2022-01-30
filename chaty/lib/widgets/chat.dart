@@ -7,8 +7,9 @@ class chatTile extends StatelessWidget {
   final name;
   final text;
   final time;
+  final unread;
 
-  chatTile({this.imageUrl, this.name, this.text, this.time});
+  chatTile({this.imageUrl, this.name, this.text, this.time, this.unread});
 
   @override
   Widget build(BuildContext context) {
@@ -32,7 +33,10 @@ class chatTile extends StatelessWidget {
               SizedBox(height: 5,),
               Text(
                 text,
-                style: subtitleTextStyle,
+                style: unread 
+                ? subtitleTextStyle.copyWith(
+                  color: hitamColor
+                ): subtitleTextStyle,
               ),
             ],
           ),
