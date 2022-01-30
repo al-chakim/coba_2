@@ -8,6 +8,15 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: biruColor,
+      floatingActionButton: FloatingActionButton(
+        onPressed: (){},
+        backgroundColor: biruColor,
+        child: Icon(
+          Icons.add,
+          size: 28,
+        ),
+      ),
+      
       body: SafeArea(
         child: SingleChildScrollView(
           child: Center(
