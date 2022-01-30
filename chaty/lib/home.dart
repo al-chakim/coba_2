@@ -90,13 +90,7 @@ class HomePage extends StatelessWidget {
                         time: 'Now',
                         unread: true,
                       ),
-                      chatTile(
-                        imageUrl: 'assets/images/kono4.png',
-                        name: 'Megumin',
-                        text: 'Atarashi ore no explosion',
-                        time: '11.35',
-                        unread: false,
-                      ),
+                      
                     ],
                   ),
                 ),
